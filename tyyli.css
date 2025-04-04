@@ -17,7 +17,7 @@
     color: black;
     }
     .topnav a.active {
-    background-color: rgb(144, 22, 22);
+    background-color: rgb(255, 102, 0);
     color: white;
     }
     .topnav .icon {
@@ -57,7 +57,8 @@
       background-color: #222;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 1px;
+      font-size: 13px;
 
   }
   @media screen and (max-width: 600px) {
@@ -74,20 +75,27 @@
 }
 
   #etusivu {
-      background-image: url("taustakuva1.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      width: 100%;
+    background-color: rgba(101, 104, 105, 0.973);
+    
+    
+    background: url('logo2.jpg') no-repeat center center;
+    background-size: cover;
+   
   }
+
+  
+
   
   .header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.7); /* Tumma läpinäkyvä tausta */
-    color: rgb(144, 22, 22);
+    color: rgb(255, 102, 0);
+    font-size:20px;
     text-align: center; /* Keskittää tekstin */
-    padding: 20px 0;
+    padding: 1px 5px;
+    font-family: Papyrus, fantasy;
+    font-weight: bolder;
+    font-stretch: expanded;
    
 }
 
@@ -95,27 +103,29 @@
     position: absolute;
     left: 20px; /* Sijoittaa logon vasempaan laitaan */
     top: 50%;
+    width:10%;
     transform: translateY(-50%); /* Keskittää pystysuunnassa */
-    height: 70px; /* Muokkaa kuvan kokoa */
-    border-radius: 50%;
+    height: 100px; /* Muokkaa kuvan kokoa */
+    border-radius: 10%;
     
     
 }
 
-.header-title {
-    margin: 0; /* Poistaa ylimääräisen marginaalin */
-    font-size: 24px;
+
     
-}
+
 .content-box {
-  background-color: rgba(0, 0, 0, 0.8); /* Musta tausta 80% läpinäkyvällä */
-  color: rgb(144, 22, 22); /* Punainen teksti */
+ 
+  color: rgb(255, 102, 0);
+  font-family: Papyrus, fantasy;
+  font-size:13px;
   padding: 5px;
   border-radius: 5px; /* Pyöristetyt kulmat */
   text-align: center;
-  max-width: 1000px; /* Aseta maksimileveys suuremmille näytöille */
-  width: 100%; /* Varmistaa, että se ei ole liian leveä mobiilissa */
-  margin: 0 20px; /* Lisää marginaalia vasemmalle ja oikealle suuremmilla näytöillä */
+  max-width: 700px; /* Aseta maksimileveys suuremmille näytöille */
+  width: 90%; /* Varmistaa, että se ei ole liian leveä mobiilissa */
+  margin: 0 auto; /* Keskittää laatikon vaakasuunnassa */
+  display: block; /* Varmistaa, että margin toimii */
   box-sizing: border-box; /* Sisällyttää paddingin ja marginaalit leveyteen */
 }
 
@@ -137,7 +147,7 @@
 }
 
 .button {
-  background: rgb(144, 22, 22);
+  background: rgb(255, 102, 0);
   color: rgb(247, 220, 195);
   font-size:14px;
   padding: 10px 20px;
@@ -156,9 +166,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 0);
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   border-radius: 10px;
   width: 300px;
   text-align: center;
@@ -170,9 +181,9 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 20px;
+  font-size: 13px;
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 102, 0);
   font-weight: lighter;
 }
 
@@ -185,7 +196,7 @@
 }
 
 .submit-button {
-  background-color: #007bff;
+  background-color: rgb(255, 102, 0);
   color: white;
   border:none;
   padding: 10px;
