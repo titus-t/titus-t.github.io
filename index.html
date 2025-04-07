@@ -34,26 +34,8 @@
     
     <div class="content-box">
         <h1>SALI, <br/>JOSSA KOVAA TREENAAMINEN ON HELPPOA! </h1>
-        <button class="button" onclick="toggleForm()">LIITY NYT</button>
-    
-        <!-- Piilotettu lomake -->
-        <div id="signupForm" class="form-container">
-            <span class="close-icon" onclick="toggleForm()">&#10006;</span> <!-- X-symboli -->
-            <h2>Liity jäseneksi</h2>
-            <form>
-                <label for="name">Etu- ja sukunimi:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="phone">Puhelinnumero:</label>
-                <input type="tel" id="phone" name="phone" required>
-    
-                <label for="email">Sähköposti:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <button type="submit" class="submit-button">Lähetä</button>
-            </form>
         </div>
-    </div>
+        
     <div class ="tyhja" style="height: 50px;"></div>
 <script>
     function toggleForm() {
@@ -114,28 +96,47 @@
 
 
 <h1 class="eotsikko">JÄSENYYDET</h1>
-<p class="subtitle">Tarjoamme sinulle GORILLA tai APINA jäsenyyden</p>
+
 
 <div class="memberships">
   <div class="card pf">
-    <h2>GORILLA</h2>
+    <h2 class="goriapi">GORILLA-TASO</h2>
     <span class="badge">Paras hinta!</span>
     <p class="price">100€ / kk</p>
-    <p>+10 euron aloitusmaksu</p>
-    <p>Access to any club, bring a guest anytime, PF+ premium digital workouts, and so much more!</p>
+    <p class="goriapiteksti">+10€ Liittymismaksu</p>
+    <p class="goriapiteksti">Pääsy keskukseen aukioloaikoina, PT-palvelut, alennuksia GORILLA-shopista!</p>
     <a href="#" class="btn">Liity nyt</a>
   </div>
 
   <div class="card">
-    <h2>APINA</h2>
+    <h2 class="goriapi">APINA-TASO</h2>
     <p class="price classic-price">50€ / kk</p>
-    <p>+10 euron aloitusmaksu</p>
-    <p>Our standard membership, with unlimited access to your home club.</p>
+    <p class="goriapiteksti">+10€ Liittymismaksu</p>
+    <p class="goriapiteksti">Pääsy keskukseen aukioloaikoina</p>
     <a href="#" class="btn purple">Liity nyt</a>
   </div>
 </div>
 
 <div class ="tyhja" style="height: 100px;"></div>
+
+<button class="button" onclick="toggleForm()">TILAA UUTISKIRJE</button>
+    
+        <!-- Piilotettu lomake -->
+        <div id="signupForm" class="form-container">
+            <span class="close-icon" onclick="toggleForm()">&#10006;</span> <!-- X-symboli -->
+            <h2>Liity joukkoomme tilaamalla uutiskirje! <br> Ei mitään turhia höpinöitä</h2>
+            <form>
+                
+    
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <button type="submit" class="submit-button">Lähetä</button>
+            </form>
+        
+    </div>
+
+    <div class ="tyhja" style="height: 30px;"></div>
 
 <div class="image-grid">
     <img src="kuva1.jpg" alt="Kuva 1">
@@ -145,6 +146,8 @@
 </div>
 
 <div class ="tyhja" style="height: 100px;"></div>
+
+
 
 
 
