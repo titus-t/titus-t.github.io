@@ -6,10 +6,15 @@
     <title>Gorilla</title>
     <link href="tyyli.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      </head>
+
   <body id="etusivu">
     <nav class="topnav" id="myTopnav">
-    <a href="index.html" class="nav-link">Koti</a>
+        <a href="index.html" class="nav-link"><i class="fa fa-home"></i></a>
+
+
+
     <a href="hinnasto.html" class="nav-link">Hinnasto & Aukioloajat</a>
     <a href="Galleria.html" class="nav-link">Galleria</a>
     <a href="Yhteystiedot.html" class="nav-link">Yhteystiedot</a>
@@ -26,7 +31,7 @@
 
 
 
-    <!-- Piilotettu lomake -->
+    
     <div class="content-box">
         <h1>SALI, <br/>JOSSA KOVAA TREENAAMINEN ON HELPPOA! </h1>
         <button class="button" onclick="toggleForm()">LIITY NYT</button>
@@ -49,7 +54,7 @@
             </form>
         </div>
     </div>
-
+    <div class ="tyhja" style="height: 50px;"></div>
 <script>
     function toggleForm() {
         var form = document.getElementById("signupForm");
@@ -108,8 +113,29 @@
 </script>
 
 
+<h1 class="eotsikko">JÄSENYYDET</h1>
+<p class="subtitle">Tarjoamme sinulle GORILLA tai APINA jäsenyyden</p>
 
-<div class ="tyhja" style="height: 200px;"></div>
+<div class="memberships">
+  <div class="card pf">
+    <h2>GORILLA</h2>
+    <span class="badge">Paras hinta!</span>
+    <p class="price">100€ / kk</p>
+    <p>+10 euron aloitusmaksu</p>
+    <p>Access to any club, bring a guest anytime, PF+ premium digital workouts, and so much more!</p>
+    <a href="#" class="btn">Liity nyt</a>
+  </div>
+
+  <div class="card">
+    <h2>APINA</h2>
+    <p class="price classic-price">50€ / kk</p>
+    <p>+10 euron aloitusmaksu</p>
+    <p>Our standard membership, with unlimited access to your home club.</p>
+    <a href="#" class="btn purple">Liity nyt</a>
+  </div>
+</div>
+
+<div class ="tyhja" style="height: 100px;"></div>
 
 <div class="image-grid">
     <img src="kuva1.jpg" alt="Kuva 1">
@@ -117,6 +143,8 @@
     <img src="kuva3.jpg" alt="Kuva 3">
     <img src="kuva4.jpg" alt="Kuva 4">
 </div>
+
+<div class ="tyhja" style="height: 100px;"></div>
 
 
 
