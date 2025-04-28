@@ -37,16 +37,7 @@
         </div>
         
     <div class ="tyhja" style="height: 50px;"></div>
-<script>
-    function toggleForm() {
-        var form = document.getElementById("signupForm");
-        if (form.style.display === "block") {
-            form.style.display = "none";
-        } else {
-            form.style.display = "block";
-        }
-    }
-</script>
+
 
 <footer>
     <p>
@@ -119,22 +110,54 @@
 
 <div class ="tyhja" style="height: 100px;"></div>
 
+
 <button class="button" onclick="toggleForm()">TILAA UUTISKIRJE</button>
-    
-        <!-- Piilotettu lomake -->
-        <div id="signupForm" class="form-container">
-            <span class="close-icon" onclick="toggleForm()">&#10006;</span> <!-- X-symboli -->
-            <h2>Liity joukkoomme tilaamalla uutiskirje! <br> Ei mitään turhia höpinöitä</h2>
-            <form>
-                
-    
-                <label for="email">Sähköposti:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <button type="submit" class="submit-button">Lähetä</button>
-            </form>
+
+<!-- Piilotettu lomake -->
+<div id="signupForm" class="form-container" style="display: none;">
+    <span class="close-icon" onclick="toggleForm()">&#10006;</span> <!-- X-symboli -->
+    <h2>Liity joukkoomme tilaamalla uutiskirje! <br> Ei mitään turhia höpinöitä</h2>
+
+    <form id="newsletterForm">
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit" class="submit-button">Lähetä</button>
+    </form>
+
+    <!-- Viesti -->
+    <p id="successMessage" style="display: none; color: rgb(255, 102, 0); font-size:22px; font-weight: bold; margin-top: 10px;">
+        Kiitos tilauksesta!
+    </p>
+</div>
+
+<script>
+    function toggleForm() {
+        const form = document.getElementById("signupForm");
+        form.style.display = form.style.display === "block" ? "none" : "block";
+    }
+
+    const form = document.getElementById("newsletterForm");
+    const message = document.getElementById("successMessage");
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
         
-    </div>
+
+        // Näytä viesti
+        message.style.display = "block";
+
+        // Tyhjennä kenttä
+        form.reset();
+
+        // Piilota viesti ja lomake automaattisesti 3s kuluttua
+        setTimeout(() => {
+            message.style.display = "none";
+            toggleForm(); // Piilota lomake
+        }, 1500);
+    });
+</script>
+
 
     <div class ="tyhja" style="height: 30px;"></div>
 
