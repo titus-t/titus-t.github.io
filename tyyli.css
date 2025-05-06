@@ -205,7 +205,7 @@ h1, h2, body {
   
   .box {
     flex: 1 1 300px;
-    background: linear-gradient(to bottom right, #c7a40a, #000033);;
+    background: linear-gradient(to bottom right, #b07124, #10104a);
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -261,7 +261,7 @@ h1, h2, body {
    
   }
 
-  #neljässivu {
+  #neljassivu {
     
     
     
@@ -272,9 +272,135 @@ h1, h2, body {
    
   }
 
+  @media screen and (max-width: 600px) {
+    #neljassivu {
+      
+    background-color: rgb(0, 0, 0); 
+
+    }
+  }
+
+  .neljasala {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .boxy {
+    background: linear-gradient(to bottom right, #020982, #a3600e);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); /* Valkoinen versio ikoneista */
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+      padding: 1rem;
+      max-width: 90%;
+      margin-top: 20px;
+    }
+  }
+
+  /* Arvostelukortit */
+.review {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Tehdään laatikoista skaalautuvat vierekkäin isolla ruudulla */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.boxy {
+  flex: 1 1 300px;
+  background: linear-gradient(to bottom right, #020982, #a3600e);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsiivinen asettelu */
+@media (max-width: 768px) {
+  .boxy {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+
+.boxy.contact {
+  align-self: flex-start;
+}
+
+
+a[href^="tel"],
+a[href^="mailto"] {
+  color: inherit;
+  text-decoration: none;
+}
+  
+
   /*MUIDEN SIVUJEN TEKSTIT*/
   .teksti1 {
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 102, 0);
     font-family: 'Courier New', Courier, monospace;
     margin: 40px auto 0 auto;
   }
@@ -365,6 +491,7 @@ h1, h2, body {
   border-color: rgb(0, 0, 0);
   display: inline-block;
   margin-top: 1px;
+  font-family: 'Courier New', Courier, monospace;
 
 }
 
@@ -383,7 +510,19 @@ h1, h2, body {
   width: 300px;
   text-align: center;
   position: relative; 
+  
 }
+
+.form-title {
+  color: rgb(255, 102, 0);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#newsletterForm {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold ;
+}
+
 
 /* X-painike */
 .close-icon {
@@ -414,6 +553,7 @@ h1, h2, body {
   margin-top: 10px;
   cursor: pointer;
   width: 100%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -478,6 +618,7 @@ color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Courier New', Courier, monospace;
 }
 /*GORILLA taustaväri ja teksti*/
 .card.pf {
@@ -552,3 +693,5 @@ color:rgb(226, 226, 226)
   font-family: 'Courier New', Courier, monospace;
   font-size:40px;
 }
+
+
