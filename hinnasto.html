@@ -28,7 +28,7 @@
 <h1 class="teksti1">Hinnasto & Aukioloajat</h1>
 </div>
 
-<div class ="tyhja1" style="height: 100px;"></div>
+
 
 <div class="container">
   <div class="box">
@@ -52,14 +52,9 @@
   </div>
 </div>
 
-<div class ="tyhja1" style="height: 100px;"></div>
 
-<footer>
-  <p>
-    <a class="linkki" href="https://juristiliitto.fi/liitto/tietosuojaseloste/" target="_blank">Tietosuojaseloste</a>
-  </p>
-  <p class="address">Mannerheimintie 1 A 1</p>
-</footer>
+
+
 
 <script>
   // Responsiivinen valikko
@@ -99,6 +94,55 @@
       });
   }
 </script>
+
+<h2>Usein Kysytyt Kysymykset (FAQ)</h2>
+
+<div class="faq">
+  <button class="faq-question">Onko kuntosalilla suihkutilat?</button>
+  <div class="faq-answer">
+    <p>Kyllä, saliltamme löytyy modernit suihkutilat ja sauna arkisin klo 10-20.</p>
+  </div>
+
+  <button class="faq-question">Miten peruutan jäsenyyteni?</button>
+  <div class="faq-answer">
+    <p>Jäsenyyden peruuttaminen onnistuu parhaiten salin asiakaspalvelusta.</p>
+  </div>
+
+  <button class="faq-question">Voinko maksaa liikuntaedulla?</button>
+  <div class="faq-answer">
+    <p>Kyllä, meillä voit maksaa yleisimmillä liikuntaeduilla, kuten Edenredillä.</p>
+  </div>
+</div>
+
+<script>
+
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+
+faqQuestions.forEach((question) => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling; // Vastauksen div
+    const isAnswerVisible = answer.style.display === 'block';
+
+    
+    answer.style.display = isAnswerVisible ? 'none' : 'block';
+
+    
+    if (!isAnswerVisible) {
+      answer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+</script>
+
+<div class ="tyhja" style="height: 100px;"></div>
+<footer>
+  <p>
+    <a class="linkki" href="https://juristiliitto.fi/liitto/tietosuojaseloste/" target="_blank">Tietosuojaseloste</a>
+  </p>
+  <p class="address">Apinatie 42</p>
+</footer>
 
 </body>
 </html>
